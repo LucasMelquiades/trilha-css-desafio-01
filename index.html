@@ -5,44 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trilha de CSS - DIO</title>
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
 </head>
 <body>
   <header class="banner">
-    <div class="banner-content">
-      <div class="logo">
-        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+    <div class="banner-content" >
+      <div class="logo" data-aos="flip-left" data-aos-duration="3000">
+        <img class="banner-imagem" src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
       </div>
-      <h1>Trilha de CSS da DIO</h1>
-      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
-      <button>Quero me inscrever</button>
+      <h1 class="titulo-banner">Trilha de CSS da DIO</h1>
+      <p class="descricao-banner">A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <button class="botao-cta">Quero me inscrever</button>
     </div>
   </header>
   <main>
     <section id="course-content">
-      <h2>O que vou aprender?</h2>
-      <p>
+      <h2 class="course-titulo">O que vou aprender?</h2>
+      <p class="course-descricao">
         Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
         desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
       </p>
       <div class="modules-list">
-        <div class="module">
+        <div class="module" data-aos="fade-right"data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <span>Módulo 01:</span> primeiros passos com CSS
         </div>
-        <div class="module">
+        <div class="module" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <span>Módulo 02:</span> trabalhando com layouts no CSS
         </div>
-        <div class="module">
+        <div class="module" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
         </div>
       </div>
     </section>
     <section id="transform-world">
-      <p>TRANSFORME O MUNDO COM A GENTE</p>
+      <p class="transform-world-descricao">TRANSFORME O MUNDO COM A GENTE</p>
     </section>
     <section id="professional-challenges">
-      <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
-      <p>
+      <h2 class="titulo-challenges">Evolua e encare novos desafios profissionais</h2>
+      <img class="imagem-challenges" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+      <p class="descricao-challenges">
         Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
         acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
         além do conhecimento técnico. 
@@ -52,7 +55,11 @@
   </main>
   <footer>
     <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+    <p class="dio-descricao">Acesse <a class="dio-link" href="https://dio.me">dio.me</a> e se cadastre agora</p>
   </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
